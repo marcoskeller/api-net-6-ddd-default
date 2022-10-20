@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Source\\projetos\\api-net-6-ddd-default\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Source\\projetos\\api-net-6-ddd-default\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\SQUADRA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Entities\\obj\\",
+      "outputPath": "C:\\Source\\projetos\\api-net-6-ddd-default\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

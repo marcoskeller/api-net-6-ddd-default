@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Source\\projetos\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Source\\projetos\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Source\\projetos\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Source\\projetos\\api-net-6-ddd-default\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\SQUADRA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Source\\projetos\\api-net-6-ddd-default\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

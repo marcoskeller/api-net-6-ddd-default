@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E5R97jFyPA862S8X2sEzELxXx5y25dnQb2MS/EaywXADvrtJN3/RegYpPFL9+F8QeNqt/nWphqlVupuJ4VmmRQ==",
+  "dgSpecHash": "hOCf5GXvCkRPJ6dZ9nwTtijdCFjw5L5HCxy7gOdAMLe3StyTrwKy8/IZ1BLFFRuD5RkD2Vq1fjE6/Blde9Qnng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SQUADRA\\Documents\\Cursos\\DEV NET CORE Valdir Ferreira\\api-net-6-ddd-default\\api-net-6-ddd-default\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Source\\projetos\\api-net-6-ddd-default\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
