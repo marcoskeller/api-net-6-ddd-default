@@ -18,6 +18,12 @@ var builder = WebApplication.CreateBuilder(args);
 /*Adicionando Serviços ao Contêiner.*/
 builder.Services.AddControllers();
 
+
+//Configurando Swagger na Aplicação - Saiba mais sobre como configurar Swagger/OpenAPI em https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
 //Configurando a string de conexão
 builder.Services.AddDbContext<ContextBase>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -34,10 +40,6 @@ builder.Services.AddControllersWithViews();
 //Adicionando Páginas Razors
 builder.Services.AddRazorPages();
 
-
-//Configurando Swagger na Aplicação - Saiba mais sobre como configurar Swagger/OpenAPI em https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 
 /*Configurando Interface e Repositório */

@@ -33,7 +33,7 @@ namespace WebAPIs.Controllers
         public async Task<IActionResult> CriarTokenIdentity([FromBody] Login login)
         {
 
-            if(string.IsNullOrWhiteSpace(login.email) || string.IsNullOrWhiteSpace(login.senha))
+            if (string.IsNullOrWhiteSpace(login.email) || string.IsNullOrWhiteSpace(login.senha))
             {
                 return Unauthorized();
             }
@@ -41,10 +41,17 @@ namespace WebAPIs.Controllers
             var resultado = await
                 _signInManager.PasswordSignInAsync(login.email, login.senha, false, lockoutOnFailure: false);
 
-            if(resultado.Succeeded)
+            if (resultado.Succeeded)
             {
                 //Recupera Usuário Logado
+                var user = new ApplicationUser
+                {
+                    UserName = login.email,
+                    Email = login.senha,
+                };
+
                 var userCurrent = await _userManager.FindByEmailAsync(login.email);
+
                 var idUsuario = userCurrent.Id;
 
                 var token = new TokenJWTBuilder()
@@ -109,7 +116,7 @@ namespace WebAPIs.Controllers
             {
                 return Ok("Erro ao confirmar usuários");
             }
-                
+
         }
     }
 }

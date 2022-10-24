@@ -20,7 +20,7 @@ namespace Infrastructure.Repository.Generics
 
         public async Task Add(T Objeto)
         {
-            using (var data = new ContextBase(_optionsBuilder))
+            using(var data = new ContextBase(_optionsBuilder))
             {
                 await data.Set<T>().AddAsync(Objeto);
                 await data.SaveChangesAsync();
@@ -30,7 +30,7 @@ namespace Infrastructure.Repository.Generics
 
         public async Task Update(T Objeto)
         {
-            using (var data = new ContextBase(_optionsBuilder))
+            using(var data = new ContextBase(_optionsBuilder))
             {
                 data.Set<T>().Update(Objeto);
                 await data.SaveChangesAsync();
@@ -40,7 +40,7 @@ namespace Infrastructure.Repository.Generics
 
         public async Task Delete(T Objeto)
         {
-            using (var data = new ContextBase(_optionsBuilder))
+            using(var data = new ContextBase(_optionsBuilder))
             {
                 data.Set<T>().Remove(Objeto);
                 await data.SaveChangesAsync();
@@ -48,17 +48,18 @@ namespace Infrastructure.Repository.Generics
         }
 
        
-        public async Task<T> GetEntityById(int Id)
+        public async Task<T> GetEntityById(int id)
         {
-            using (var data = new ContextBase(_optionsBuilder))
+            using(var data = new ContextBase(_optionsBuilder))
             {
-                return await data.Set<T>().FindAsync();
+                return await data.Set<T>().FindAsync(id);
             }
         }
 
+
         public async Task<List<T>> List()
         {
-            using (var data = new ContextBase(_optionsBuilder))
+            using(var data = new ContextBase(_optionsBuilder))
             {
                 return await data.Set<T>().ToListAsync();
             }

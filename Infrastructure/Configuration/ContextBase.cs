@@ -15,6 +15,7 @@ namespace Infrastructure.Configuration
 
 
         public DbSet<Message> Message { get; set; }
+        
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
 
@@ -39,7 +40,7 @@ namespace Infrastructure.Configuration
         //Método alternativo para obter a string de conexão com o banco de dados caso não exista no arquivo appSettings.json
         public string ObterStringConexao()
         {
-            return "Data Source=caminhoParaAcessarBanco;Initial Catalog=nomeDoBanco;Integrated Security=False;User ID=usuarioDoBanco;Password=senhaDoBanco;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+            return "Data Source=SQNOT14190\\SQLEXPRESS;Initial Catalog=API_DDD_DEFAULT;Integrated Security=False;User ID=sa;Password=596874;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
         }
     }
 }

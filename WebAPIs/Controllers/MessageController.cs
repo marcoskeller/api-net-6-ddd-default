@@ -25,7 +25,7 @@ namespace WebAPIs.Controllers
         [Authorize]
         [Produces("application/json")]
         [HttpPost("/api/Add")]
-        public async Task<List<Notifies>> Add(Message message)
+        public async Task<List<Notifies>> Add(MessageViewModel message)
         {
             message.UserId = await RetornarIdUsuarioLogado();
             var messageMap = _imapper.Map<Message>(message);
@@ -38,7 +38,7 @@ namespace WebAPIs.Controllers
         [Authorize]
         [Produces("application/json")]
         [HttpPost("/api/Update")]
-        public async Task<List<Notifies>> Update(Message message)
+        public async Task<List<Notifies>> Update(MessageViewModel message)
         {
             var messageMap = _imapper.Map<Message>(message);
             await _imessage.Update(messageMap);
@@ -62,9 +62,17 @@ namespace WebAPIs.Controllers
         [Authorize]
         [Produces("application/json")]
         [HttpPost("/api/GetEntityById")]
-        public async Task<MessageViewModel> GetEntityById(Message message)
+        //public async Task<MessageViewModel> GetEntityById(Message message)
+        //{
+        //    message = await _imessage.GetEntityById(message.Id);
+        //    var messageMap = _imapper.Map<MessageViewModel>(message);
+
+        //    return messageMap;
+        //}
+        public async Task<MessageViewModel> GetEntityById(int id)
         {
-            message = await _imessage.GetEntityById(message.Id);
+            var message = await _imessage.GetEntityById(id);
+
             var messageMap = _imapper.Map<MessageViewModel>(message);
 
             return messageMap;
@@ -78,7 +86,7 @@ namespace WebAPIs.Controllers
         {
             var mensagens = await _imessage.List();
             var messageMap = _imapper.Map<List<MessageViewModel>>(mensagens);
-            
+
             return messageMap;
         }
 
