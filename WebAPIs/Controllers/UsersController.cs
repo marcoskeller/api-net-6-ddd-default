@@ -26,7 +26,7 @@ namespace WebAPIs.Controllers
         }
 
 
-
+        //Método para verificar se existe o usuario e se o mesmo existe cria um token para ele
         [AllowAnonymous]
         [Produces("application/json")]
         [HttpPost("/api/CriarTokenIdentity")]
@@ -66,6 +66,7 @@ namespace WebAPIs.Controllers
 
 
 
+        //Método para adicionar usuarios, os mesmos sempre serão adicionados como usuários comuns
         [AllowAnonymous]
         [Produces("application/json")]
         [HttpPost("/api/AdicionaUsuarioIdentity")]
@@ -109,9 +110,6 @@ namespace WebAPIs.Controllers
                 return Ok("Erro ao confirmar usuários");
             }
                 
-
         }
-
-
     }
 }
